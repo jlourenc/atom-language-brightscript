@@ -1,0 +1,258 @@
+'scopeName': 'source.brightscript'
+'fileTypes': [
+    'brs'
+    'bs'
+]
+'name': 'BrightScript'
+'patterns': [
+    {
+        'include': '#controls'
+    }
+    {
+        'include': '#types'
+    }
+    {
+        'include': '#operators'
+    }
+    {
+        'include': '#numbers'
+    }
+    {
+        'include': '#comments'
+    }
+    {
+        'match': '(?<![^.])\\b[a-zA-Z_][\\w]*\\b(?!(?!\\(.*\\)))'
+        'name': 'support.function.component.brightscript'
+    }
+    {
+        'comment': 'runtime functions'
+        'match': '(?<![.])\\b(?i:createobject|type|get|box|run|eval|get(?:globalaa|lastrun(?:compileerror|runtimeerror)))\\b(?!(?!\\(.*\\)))'
+        'name': 'support.function.brightscript'
+    }
+    {
+        'comment': 'global utility functions'
+        'match': '(?<![.])\\b(?i:sleep|wait|getinterface|findmemberfunction|uptime|rebootsystem|listdir|(?:(?:read|write)ascii|copy|move|delete)file|matchfiles|(?:delete|create)directory|formatdrive|strtoi|rungarbagecollector|(?:parse|format)json|tr)\\b(?!(?!\\(.*\\)))'
+        'name': 'support.function.brightscript'
+    }
+    {
+        'comment': 'global string functions'
+        'match': '(?<![.])\\b(?i:(?:u|l)case|asc|chr|instr|le(?:ft|n)|mid|right|str(?:i(?:ng(?:i)?)?)?|val|substitute)\\b(?!(?!\\(.*\\)))'
+        'name': 'support.function.brightscript'
+    }
+    {
+        'comment': 'global math functions'
+        'match': '(?<![.])\\b(?i:a(?:bs|tn)|c(?:dbl|int|os|sng)|exp|fix|int|log|rnd|s(?:gn|in|qr)|tan)\\b(?!(?!\\(.*\\)))'
+        'name': 'support.function.brightscript'
+    }
+    {
+        'begin': '"'
+        'end': '"'
+        'name': 'string.quoted.double.brightscript'
+        'patterns': [
+            {
+                'match': '\\\\.'
+                'name': 'constant.character.escape.brightscript'
+            }
+            {
+                'include': '#roku_components'
+            }
+        ]
+    }
+    {
+        'match': '\\bm\\b'
+        'name': 'variable.language.m.brightscript'
+    }
+    {
+        'match': '(?<![.])\\b(?i:true|false|invalid|line_num)\\b(?<![\\(])'
+        'name': 'constant.language.brightscript'
+    }
+    {
+        'common BrightScript constant naming idiom'
+        'match': '\\b[_A-Z][_A-Z0-9]*\\b'
+        'name': 'constant.other.brightscript'
+    }
+    {
+        'match': ','
+        'name': 'meta.delimiter.object.comma.brightscript'
+    }
+    {
+        'match': '\\.'
+        'name': 'meta.delimiter.method.period.brightscript'
+    }
+    {
+        'begin': '{'
+        'beginCaptures':
+            '0':
+                'name': 'meta.brace.curly.brightscript'
+        'end': '}'
+        'endCaptures':
+            '0':
+                'name': 'meta.brace.curly.brightscript'
+        'patterns': [
+            {
+                'include': '$self'
+            }
+        ]
+    }
+    {
+        'begin': '\\('
+        'beginCaptures':
+            '0':
+                'name': 'meta.brace.round.brightscript'
+        'end': '\\)'
+        'endCaptures':
+            '0':
+                'name': 'meta.brace.round.brightscript'
+        'patterns': [
+            {
+                'include': '$self'
+            }
+        ]
+    }
+    {
+        'match': '\\[|\\]'
+        'name': 'meta.brace.square.brightscript'
+    }
+]
+'repository':
+    'roku_components':
+        'match': '(?<![^\\"])\\b(?i:(ro(?:a(?:pp(?:info|manager)|rray|ssociativearray|udio(?:metadata|player|resource))|b(?:itmap|oolean|ytearray)|c(?:aptionrender|hannelstore|oderegistrationscreen|ompositor)|d(?:at(?:agramsocket|etime)|eviceinfo|ouble)|e(?:vp(?:cipher|digest))|f(?:ilesystem|loat|ont(?:metrics|registry)?|unction)|gridscreen|h(?:dmistatus|mac)|i(?:mage(?:canvas|metadata)|n(?:teger|valid))|keyboardscreen|l(?:ist(?:screen)?|o(?:calization|nginteger))|message(?:dialog|port)|onelinedialog|p(?:a(?:ragraphscreen|th)|inentrydialog|osterscreen|rogramguide)|r(?:eg(?:ex|ion|istry(?:section)?)|sa)|s(?:creen|earch(?:history|screen)|lideshow|ocketaddress|pri(?:ngboardscreen|te)|tr(?:eamsocket|ing)|ystemlog)|t(?:ext(?:screen|ure(?:manager|request))|imespan|uner)|urltransfer|video(?:player|screen)|xml(?:element|list))))\\b(?![^\\"])'
+        'name': 'support.class.brightscript'
+    'controls':
+        'patterns': [
+            {
+                'match': '''(?x)
+                    (?<![^\\s])(?i:
+                        if|then|else|for|to|step|each|in|while|exit|as|return|print|goto|dim|end|stop
+                    )(?![^\\s])
+                '''
+                'name': 'keyword.control.brightscript'
+            }
+            {
+                'match': '''(?x)
+                    (?<![^\\s=:])(?i:
+                        function|sub
+                    )(?![^\\s\\(])
+                '''
+                'name': 'keyword.control.brightscript'
+            }
+        ]
+    'types':
+        'patterns': [
+            {
+                'match': '''(?x)
+                    (?<![^\\s])(?i:
+                        boolean|(?:long)?integer|f(?:loat|unction)|d(?:ouble|ynamic)|string|object|void
+                    )(?![^\\s\\,\\)])
+                '''
+                'name': 'storage.type.brightscript'
+            }
+        ]
+    'operators':
+        'patterns': [
+            {
+                'match': '[\\+\\-\\*\\/<\\>\\=\\^\\-\\\\]'
+                'name': 'keyword.operator.brightscript'
+            }
+            {
+                'match': '''(?x)
+                    (?<![\\.])\\b(?i:
+                        and|or|mod|not
+                    )\\b
+                '''
+                'name': 'keyword.operator.brightscript'
+            }
+        ]
+    'numbers':
+        'patterns': [
+            {
+                'match': '''(?x)
+                    (?<![^\\\\\/\\*\\+\\-\\^\\=\\>\\<\\[\\(\\,\\}\\s])(?:
+                        &[hH][0-9a-fA-F]+&?                             # &h0A&
+                    )(?![^\\\\\/\\*\\+\\-\\^\\=\\>\\<\\]\\)\\,\\}\\s])
+                '''
+                'name': 'constant.numeric.hex.brightscript'
+            }
+            {
+                'match': '''(?x)
+                    (?<![^\\\\\/\\*\\+\\-\\^\\=\\>\\<\\[\\(\\,\\}\\s])(?:
+                        (?:[0-9]+(?:(\\.)[0-9]+)?[dDeE][+-]?[0-9]+\\b)| # 1.1E+3
+                        (?:[0-9]+(\\.)[0-9]+[#]?)|                      # 1.1
+                        (?:[0-9]+[!&]?)                                 # 1
+                    )(?![^\\\\\/\\*\\+\\-\\^\\=\\>\\<\\]\\)\\,\\}\\s])
+                '''
+                'captures':
+                    '0':
+                        'name': 'constant.numeric.decimal.brightscript'
+                    '1':
+                        'name': 'meta.delimiter.decimal.period.brightscript'
+                    '2':
+                        'name': 'meta.delimiter.decimal.period.brightscript'
+            }
+        ]
+    'docblock':
+        'patterns': [
+            {
+                'match': '(?<!\\w)@(abstract|access|alias|augments|author|async|attribute|arg|argument|beta|borrows|bubbes|callback|class|classdesc|config|const|constant|constructs|constructor|copyright|chainable|default|defaultvalue|deprecated|desc|description|enum|emits|event|example|exports|external|extends|extension|extensionfor|extension_for|for|file|fileoverview|fires|final|function|global|host|ignore|implements|inheritdoc|inner|instance|interface|kind|lends|license|listens|main|member|memberof|method|mixex|mixin(?:s|)|module|name|namespace|override|overview|param|private|prop|property|protected|readonly|readOnly|requires|required|return|returns|see|since|static|summary|submodule|this|throws|todo|tutorial|type|typedef|var|variation|version|virtual|usage|uses|writeOnce)\\b'
+                'name': 'storage.type.class.brightscriptdoc'
+            }
+            {
+                'match': '({\\b(?:[a-zA-Z_$][a-zA-Z_$0-9]*)\\b})\\s\\b([a-zA-Z_$][a-zA-Z_$0-9]*)\\b\\s*((?:(?!\\*\\/).)*)'
+                'captures':
+                    '0':
+                        'name': 'other.meta.brightscriptdoc'
+                    '1':
+                        'name': 'entity.name.type.instance.brightscriptdoc'
+                    '2':
+                        'name': 'variable.other.brightscriptdoc'
+                    '3':
+                        'name': 'other.description.brightscriptdoc'
+            }
+        ]
+    'comments':
+        'patterns': [
+            {
+                'begin': '(^[ \\t]+)?(?=\')'
+                'beginCaptures':
+                    '1':
+                        'name': 'punctuation.whitespace.comment.leading.brightscript'
+                'end': '(?!\\G)'
+                'patterns': [
+                    {
+                        'begin': '\''
+                        'beginCaptures':
+                            '0':
+                                'name': 'punctuation.definition.comment.brightscript'
+                        'end': '\\n'
+                        'name': 'comment.line.apostrophe.brightscript'
+                        'patterns': [
+                            {
+                                'include': '#docblock'
+                            }
+                        ]
+                    }
+                ]
+            }
+            {
+                'begin': '(^[ \\t]+)?(?i:(?=rem ))'
+                'beginCaptures':
+                    '1':
+                        'name': 'punctuation.whitespace.comment.leading.brightscript'
+                'end': '(?!\\G)'
+                'patterns': [
+                    {
+                        'begin': '(?i:rem)'
+                        'beginCaptures':
+                            '0':
+                                'name': 'punctuation.definition.comment.brightscript'
+                        'end': '\\n'
+                        'name': 'comment.line.remark.brightscript'
+                        'patterns': [
+                            {
+                                'include': '#docblock'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
