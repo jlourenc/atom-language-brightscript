@@ -3,7 +3,7 @@
         'prefix': 'Abs'
         'body': 'Abs(${1:x})$0'
         'description': 'Returns the absolute value of the argument.'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'Asc':
         'prefix': 'Asc'
         'body': 'Asc("${1:letter}")$0'
@@ -16,7 +16,7 @@
         'prefix': 'Atn'
         'body': 'Atn(${1:x})$0'
         'description': 'Returns the arctangent (in radians) of the argument.'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'Box':
         'prefix': 'Box'
         'body': 'Box(${1:variable})$0'
@@ -29,7 +29,7 @@
         'prefix': 'Cdbl'
         'body': 'Cdbl(${1:x})$0'
         'description': 'Returns a single precision float representation of the argument.'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'Chr':
         'prefix': 'Chr'
         'body': 'Chr(${1:asciiVal})$0'
@@ -39,7 +39,7 @@
         'prefix': 'Cint'
         'body': 'Cint(${1:x})$0'
         'description': 'Returns an integer representation of the argument, rounding up from midpoints.'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'CopyFile':
         'prefix': 'CopyFile'
         'body': 'CopyFile("${1:sourcePath}", "${2:destinationPath}")$0'
@@ -49,7 +49,7 @@
         'prefix': 'Cos'
         'body': 'Cos(${1:x})$0'
         'description': 'Returns the cosine of the argument (argument must be in radians).'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'CreateDirectory':
         'prefix': 'CreateDirectory'
         'body': 'CreateDirectory("${1:directoryPath}")$0'
@@ -67,7 +67,7 @@
         'prefix': 'Csng'
         'body': 'Csng(${1:x})$0'
         'description': 'Returns a single-precision float representation of the argument.'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'DeleteDirectory':
         'prefix': 'DeleteDirectory'
         'body': 'DeleteDirectory("${1:directoryPath}")$0'
@@ -93,7 +93,7 @@
         'prefix': 'Exp'
         'body': 'Exp(${1:x})$0'
         'description': 'Returns the "natural exponential" of X, that is, ex.'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'FindMemberFunction':
         'prefix': 'FindMemberFunction'
         'body': 'FindMemberFunction(${1:object}, "${2:funName}")$0'
@@ -110,7 +110,7 @@
             All digits to the right of the decimal point are simply chopped off,
             so the resultant value is an integer.
         """
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'FormatDrive':
         'prefix': 'FormatDrive'
         'body': 'FormatDrive("${1:drivePath}", "${2:fileSystemType}")$0'
@@ -160,7 +160,12 @@
             Returns an integer representation of the argument,
             using the largest whole number that is not greater than the argument.
         """
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+    'Init':
+        'prefix': 'Init'
+        'body': 'function init () as Void\n\t${1:\' code here}\nend function'
+        'description': 'Allows initialization and other scripted control of a Scene Graph XML component.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/pages/viewpage.action?pageId=1608546'
     'LCase':
         'prefix': 'LCase'
         'body': 'LCase("${1:str}")$0'
@@ -188,7 +193,7 @@
         'prefix': 'Log'
         'body': 'Log(${1:x})$0'
         'description': 'Returns the natural logarithm of the argument, that is, loge(x) or ln(x).'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'MatchFiles':
         'prefix': 'MatchFiles'
         'body': 'MatchFiles("${1:path}", "${2:patternIn}")$0'
@@ -213,6 +218,19 @@
         'body': 'MoveFile("${1:sourcePath}", "${2:destinationPath}")$0'
         'description': 'Renames a file.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions'
+    'OnKeyEvent':
+        'prefix': 'OnKeyEvent'
+        'body': 'function onKeyEvent (key as String, press as Boolean) as Boolean\n\t${1:\' code here}\n\treturn true\nend function'
+        'description': """
+            Receives remote control key events from the firmware,
+            and allows you to write event handlers for a node or component in response to the events.
+            The function returns a message to the firmware to indicate
+            that a particular event has been handled by the node or component,
+            preventing the event from moving up the focus chain,
+            to possibly be handled by parent nodes in the Scene Graph node tree,
+            or by default firmware handlers.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/pages/viewpage.action?pageId=1608546'
     'ParseJson':
         'prefix': 'ParseJson'
         'body': 'ParseJson("${1:jsonString}")$0'
@@ -248,7 +266,15 @@
             RND may be used to produce random numbers between 0 and 1,
             or random integers greater than 0, depending on the argument.
         """
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+    'Roku_Ads':
+        'prefix': 'Roku_Ads'
+        'body': 'Roku_Ads()$0'
+        'description': """
+            Roku Advertising Framework is a universal video ad solution integrated directly
+            into the core Roku SDK as a common library.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Roku+Advertising+Framework'
     'Run':
         'prefix': 'Run'
         'body': 'Run(${1:filePath}${2:, ${3:optionalParameters}})$0'
@@ -269,12 +295,12 @@
         'prefix': 'Sgn'
         'body': 'Sgn(${1:x})$0'
         'description': 'Returns -1 for X negative, 0 for X zero, and +1 for X positive.'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'Sin':
         'prefix': 'Sin'
         'body': 'Sin(${1:x})$0'
         'description': 'Returns the sine of the argument (argument must be in radians).'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'Sleep':
         'prefix': 'Sleep'
         'body': 'Sleep(${1:milliseconds})$0'
@@ -284,7 +310,7 @@
         'prefix': 'Sqr'
         'body': 'Sqr(${1:x})$0'
         'description': 'Returns the square root of the argument.'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'Str':
         'prefix': 'Str'
         'body': 'Str(${1:value})$0'
@@ -309,7 +335,7 @@
             Returns a string composed of n copies of the character
             whose ASCII value is the second argument.
         """
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions'
     'StrToI':
         'prefix': 'StrToI'
         'body': 'StrToI("${1:str}")$0'
@@ -328,7 +354,7 @@
         'prefix': 'Tan'
         'body': 'Tan(${1:x})$0'
         'description': 'Returns the tangent of the argument (argument must be in radians).'
-        'descriptionMoreUrl': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions'
     'Tr':
         'prefix': 'Tr'
         'body': 'Tr("${1:source}")$0'
