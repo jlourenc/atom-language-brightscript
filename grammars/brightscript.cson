@@ -6,47 +6,14 @@
 'name': 'BrightScript'
 'patterns': [
     {
-        'include': '#controls'
-    }
-    {
-        'include': '#types'
-    }
-    {
-        'include': '#operators'
-    }
-    {
-        'include': '#numbers'
-    }
-    {
-        'include': '#comments'
-    }
-    {
-        'match': '(?<![^.])\\b[a-zA-Z_][\\w]*\\b(?!(?!\\(.*\\)))'
-        'name': 'support.function.component.brightscript'
-    }
-    {
-        'comment': 'runtime functions'
-        'match': '(?<![.])\\b(?i:createobject|type|get|box|run|eval|get(?:globalaa|lastrun(?:compileerror|runtimeerror)))\\b(?!(?!\\(.*\\)))'
-        'name': 'support.function.brightscript'
-    }
-    {
-        'comment': 'global utility functions'
-        'match': '(?<![.])\\b(?i:sleep|wait|getinterface|findmemberfunction|uptime|rebootsystem|listdir|(?:(?:read|write)ascii|copy|move|delete)file|matchfiles|(?:delete|create)directory|formatdrive|strtoi|rungarbagecollector|(?:parse|format)json|tr)\\b(?!(?!\\(.*\\)))'
-        'name': 'support.function.brightscript'
-    }
-    {
-        'comment': 'global string functions'
-        'match': '(?<![.])\\b(?i:(?:u|l)case|asc|chr|instr|le(?:ft|n)|mid|right|str(?:i(?:ng(?:i)?)?)?|val|substitute)\\b(?!(?!\\(.*\\)))'
-        'name': 'support.function.brightscript'
-    }
-    {
-        'comment': 'global math functions'
-        'match': '(?<![.])\\b(?i:a(?:bs|tn)|c(?:dbl|int|os|sng)|exp|fix|int|log|rnd|s(?:gn|in|qr)|tan)\\b(?!(?!\\(.*\\)))'
-        'name': 'support.function.brightscript'
-    }
-    {
         'begin': '"'
+        'beginCaptures':
+            '0':
+                'name': 'punctuation.definition.string.begin.brightscript'
         'end': '"'
+        'endCaptures':
+            '0':
+                'name': 'punctuation.definition.string.end.brightscript'
         'name': 'string.quoted.double.brightscript'
         'patterns': [
             {
@@ -75,9 +42,35 @@
         'name': 'constant.language.brightscript'
     }
     {
-        'common BrightScript constant naming idiom'
-        'match': '\\b[_A-Z][_A-Z0-9]*\\b'
-        'name': 'constant.other.brightscript'
+        'include': '#comments'
+    }
+    {
+        'include': '#controls'
+    }
+    {
+        'include': '#types'
+    }
+    {
+        'include': '#operators'
+    }
+    {
+        'include': '#numbers'
+    }
+    {
+        'include': '#method_calls'
+    }
+    {
+        'include': '#function_calls'
+    }
+    {
+        'include': '#objects'
+    }
+    {
+        'include': '#properties'
+    }
+    {
+        'match': '(?<!\\$)\\b[0-9]+[\\w$]*'
+        'name': 'invalid.illegal.identifier.brightscript'
     }
     {
         'match': ','
@@ -124,7 +117,7 @@
 ]
 'repository':
     'roku_components':
-        'match': '(?<![^\\"])\\b(?i:(ro(?:a(?:pp(?:info|manager)|rray|ssociativearray|udio(?:metadata|player|resource))|b(?:itmap|oolean|ytearray)|c(?:aptionrender|hannelstore|oderegistrationscreen|ompositor)|d(?:at(?:agramsocket|etime)|eviceinfo|ouble)|e(?:vp(?:cipher|digest))|f(?:ilesystem|loat|ont(?:metrics|registry)?|unction)|gridscreen|h(?:dmistatus|mac)|i(?:mage(?:canvas|metadata)|n(?:teger|valid))|keyboardscreen|l(?:ist(?:screen)?|o(?:calization|nginteger))|message(?:dialog|port)|onelinedialog|p(?:a(?:ragraphscreen|th)|inentrydialog|osterscreen|rogramguide)|r(?:eg(?:ex|ion|istry(?:section)?)|sa)|s(?:creen|earch(?:history|screen)|lideshow|ocketaddress|pri(?:ngboardscreen|te)|tr(?:eamsocket|ing)|ystemlog)|t(?:ext(?:screen|ure(?:manager|request))|imespan|uner)|urltransfer|video(?:player|screen)|xml(?:element|list))))\\b(?![^\\"])'
+        'match': '(?<![^\\"])\\b(?i:(ro(?:a(?:pp(?:info|manager)|rray|ssociativearray|udio(?:metadata|player(?:event)?|resource))|b(?:itmap|oolean|ytearray)|c(?:aptionrenderer(?:event)?|hannelstore(?:event)?|oderegistrationscreen(?:event)?|ompositor)|d(?:at(?:agramsocket|etime)|eviceinfo(?:event)?|ouble)|e(?:vp(?:cipher|digest))|f(?:ilesystem(?:event)?|loat|ont(?:metrics|registry)?|unction)|gridscreen(?:event)?|h(?:dmi(?:hotplugevent|status(?:event)?)|mac)|i(?:mage(?:canvas(?:event)?|metadata)|n(?:teger|valid))|keyboardscreen(?:event)?|l(?:ist(?:screen(?:event)?)?|o(?:calization|nginteger))|message(?:dialog(?:event)?|port)|onelinedialog(?:event)?|p(?:a(?:ragraphscreen(?:event)?|th)|inentrydialog(?:event)?|osterscreen(?:event)?|rogramguide)|r(?:eg(?:ex|ion|istry(?:section)?)|sa)|s(?:creen|earch(?:history|screen(?:event)?)|lideshow(?:event)?|ocket(?:address|event)|pri(?:ngboardscreen(?:event)?|te)|tr(?:eamsocket|ing)|ystemlog(?:event)?)|t(?:ext(?:screen(?:event)?|ure(?:manager|request(?:event)?))|imespan|uner(?:event)?)|universalcontrolevent|url(?:event|transfer)|video(?:player|screen)(?:event)?|xml(?:element|list))))\\b(?![^\\"])'
         'name': 'support.class.brightscript'
     'controls':
         'patterns': [
@@ -159,15 +152,43 @@
     'operators':
         'patterns': [
             {
-                'match': '[\\+\\-\\*\\/<\\>\\=\\^\\-\\\\]'
+                'match': '\\+=|-=|\\*=|\\/=|\\\\='
+                'name': 'keyword.operator.assignment.compound.brightscript'
+            }
+            {
+                'match': '<<=|>>='
+                'name': 'keyword.operator.assignment.compound.bitwise.brightscript'
+            }
+            {
+                'match': '<>|<=|>=|=|<|>'
+                'name': 'keyword.operator.comparison.brightscript'
+            }
+            {
+                'match': '(?x)(?<![\\.])\\b(?i:and|or|not)\\b'
+                'name': 'keyword.operator.logical.brightscript'
+            }
+            {
+                'match': '<<|>>'
+                'name': 'keyword.operator.bitwise.brightscript'
+            }
+            {
+                'match': '='
+                'name': 'keyword.operator.assignment.brightscript'
+            }
+            {
+                'match': '--'
+                'name': 'keyword.operator.decrement.brightscript'
+            }
+            {
+                'match': '\\+\\+'
+                'name': 'keyword.operator.increment.brightscript'
+            }
+            {
+                'match': '\\^|-|\\+|\\*|\\\\|\\/'
                 'name': 'keyword.operator.brightscript'
             }
             {
-                'match': '''(?x)
-                    (?<![\\.])\\b(?i:
-                        and|or|mod|not
-                    )\\b
-                '''
+                'match': '(?x)(?<![\\.])\\b(?i:mod|not)\\b'
                 'name': 'keyword.operator.brightscript'
             }
         ]
@@ -198,10 +219,122 @@
                         'name': 'meta.delimiter.decimal.period.brightscript'
             }
         ]
+    'method_calls':
+        'patterns': [
+            {
+                'match': '(\\.)\\s*([\\w$]+)\\s*(?=\\()'
+                'captures':
+                    '1':
+                        'name': 'meta.delimiter.method.period.brightscript'
+                    '2':
+                        'patterns': [
+                            {
+                                'match': "[a-zA-Z_$][\\w$]*"
+                                'name': 'entity.name.function.brightscript'
+                            }
+                            {
+                                'match': '\\d[\\w$]*'
+                                'name': 'invalid.illegal.identifier.brightscript'
+                            }
+                        ]
+            }
+        ]
+    'function_calls':
+        'patterns': [
+            {
+                'match': '([\\w$]+)\\s*(?=\\()'
+                'captures':
+                    '1':
+                        'patterns': [
+                            {
+                                'comment': 'runtime functions'
+                                'match': '(?i:createobject|type|get|box|run|eval|get(?:globalaa|lastrun(?:compileerror|runtimeerror)))\\b'
+                                'name': 'support.function.brightscript'
+                            }
+                            {
+                                'comment': 'global utility functions'
+                                'match': '(?i:sleep|wait|getinterface|findmemberfunction|uptime|rebootsystem|listdir|(?:(?:read|write)ascii|copy|move|delete)file|matchfiles|(?:delete|create)directory|formatdrive|strtoi|rungarbagecollector|(?:parse|format)json|tr)\\b'
+                                'name': 'support.function.brightscript'
+                            }
+                            {
+                                'comment': 'global string functions'
+                                'match': '(?i:(?:u|l)case|asc|chr|instr|le(?:ft|n)|mid|right|str(?:i(?:ng(?:i)?)?)?|val|substitute)\\b'
+                                'name': 'support.function.brightscript'
+                            }
+                            {
+                                'comment': 'global math functions'
+                                'match': '(?i:a(?:bs|tn)|c(?:dbl|int|os|sng)|exp|fix|int|log|rnd|s(?:gn|in|qr)|tan)\\b'
+                                'name': 'support.function.brightscript'
+                            }
+                            {
+                                'match': "[a-zA-Z_$][\\w$]*"
+                                'name': 'entity.name.function.brightscript'
+                            }
+                            {
+                                'match': '\\d[\\w$]*'
+                                'name': 'invalid.illegal.identifier.brightscript'
+                            }
+                        ]
+            }
+        ]
+    'objects':
+        'patterns': [
+            {
+                'match': '[A-Z][A-Z0-9_$]*(?=\\s*\\.\\s*[a-zA-Z_$]\\w*)'
+                'name': 'constant.other.object.brightscript'
+            }
+            {
+                'match': '[a-zA-Z_$][\\w$]*(?=\\s*\\.\\s*[a-zA-Z_$]\\w*)'
+                'name': 'variable.other.object.brightscript'
+            }
+        ]
+    'properties':
+        'patterns': [
+            {
+                'match': '(\\.)\\s*([A-Z][A-Z0-9_$]*\\b\\$*)(?=\\s*\\.\\s*[a-zA-Z_$]\\w*)'
+                'captures':
+                    '1':
+                        'name': 'meta.delimiter.property.period.brightscript'
+                    '2':
+                        'name': 'constant.other.object.property.brightscript'
+            }
+            {
+                'match': '(\\.)\\s*(\\$*[a-zA-Z_$][\\w$]*)(?=\\s*\\.\\s*[a-zA-Z_$]\\w*)'
+                'captures':
+                    '1':
+                        'name': 'meta.delimiter.property.period.brightscript'
+                    '2':
+                        'name': 'variable.other.object.property.brightscript'
+            }
+            {
+                'match': '(\\.)\\s*([A-Z][A-Z0-9_$]*\\b\\$*)'
+                'captures':
+                    '1':
+                        'name': 'meta.delimiter.property.period.brightscript'
+                    '2':
+                        'name': 'constant.other.property.brightscript'
+            }
+            {
+                'match': '(\\.)\\s*(\\$*[a-zA-Z_$][\\w$]*)'
+                'captures':
+                    '1':
+                        'name': 'meta.delimiter.property.period.brightscript'
+                    '2':
+                        'name': 'variable.other.property.brightscript'
+            }
+            {
+                'match': '(\\.)\\s*([0-9][\\w$]*)'
+                'captures':
+                    '1':
+                        'name': 'meta.delimiter.property.period.brightscript'
+                    '2':
+                        'name': 'invalid.illegal.identifier.brightscript'
+            }
+        ]
     'docblock':
         'patterns': [
             {
-                'match': '(?<!\\w)@(abstract|access|alias|augments|author|async|attribute|arg|argument|beta|borrows|bubbes|callback|class|classdesc|config|const|constant|constructs|constructor|copyright|chainable|default|defaultvalue|deprecated|desc|description|enum|emits|event|example|exports|external|extends|extension|extensionfor|extension_for|for|file|fileoverview|fires|final|function|global|host|ignore|implements|inheritdoc|inner|instance|interface|kind|lends|license|listens|main|member|memberof|method|mixex|mixin(?:s|)|module|name|namespace|override|overview|param|private|prop|property|protected|readonly|readOnly|requires|required|return|returns|see|since|static|summary|submodule|this|throws|todo|tutorial|type|typedef|var|variation|version|virtual|usage|uses|writeOnce)\\b'
+                'match': '(?<!\\w)@(abstract|access|alias|augments|author|async|attribute|arg|argument|beta|borrows|bubbes|callback|class|classdesc|config|const|constant|constructs|constructor|copyright|chainable|default|defaultvalue|deprecated|desc|description|enum|emits|event|example|exports|external|extends|extension|extensionfor|extension_for|for|file|fileoverview|fires|final|function|global|host|ignore|implements|inheritdoc|inherits|inner|instance|interface|kind|lends|license|listens|main|member|memberof|method|mixex|mixin(?:s|)|module|name|namespace|override|overview|param|private|prop|property|protected|readonly|readOnly|requires|required|return|returns|see|since|static|summary|submodule|this|throws|todo|tutorial|type|typedef|var|variation|version|virtual|usage|uses|writeOnce)\\b'
                 'name': 'storage.type.class.brightscriptdoc'
             }
             {

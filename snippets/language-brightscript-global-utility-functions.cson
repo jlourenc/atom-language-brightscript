@@ -1,0 +1,134 @@
+'.source.brightscript':
+    'CopyFile':
+        'prefix': 'CopyFile'
+        'body': 'CopyFile("${1:sourcePath}", "${2:destinationPath}")$0'
+        'description': 'Makes a copy of a file.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-CopyFile(sourceasString,destinationasString)asBoolean'
+    'CreateDirectory':
+        'prefix': 'CreateDirectory'
+        'body': 'CreateDirectory("${1:directoryPath}")$0'
+        'description': 'Creates the specified directory. Only one directory can be created at a time.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-CreateDirectory(dirasString)asBoolean'
+    'DeleteDirectory':
+        'prefix': 'DeleteDirectory'
+        'body': 'DeleteDirectory("${1:directoryPath}")$0'
+        'description': """
+            Deletes the specified directory.
+            It is only possible to delete an empty directory.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-DeleteDirectory(dirasString)asBoolean'
+    'DeleteFile':
+        'prefix': 'DeleteFile'
+        'body': 'DeleteFile("${1:filePath}")$0'
+        'description': 'Deletes the specified file.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-DeleteFile(fileasString)asBoolean'
+    'FindMemberFunction':
+        'prefix': 'FindMemberFunction'
+        'body': 'FindMemberFunction(${1:object}, "${2:funName}")$0'
+        'description': """
+            Returns the interface from the object that provides the specified function,
+            or invalid if not found.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-FindMemberFunction(objectasObject,funNameasString)AsInterface'
+    'FormatDrive':
+        'prefix': 'FormatDrive'
+        'body': 'FormatDrive("${1:drivePath}", "${2:fileSystemType}")$0'
+        'description': 'Formats a specified drive using the specified filesystem.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-FormatDrive(driveasString,fs_typeasString)asBoolean'
+    'FormatJson':
+        'prefix': 'FormatJson'
+        'body': 'FormatJson(${1:jsonObject}${2:, ${3:optionalFlag}})$0'
+        'description': 'Formats an Associative Array as a JSON string.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-FormatJson(jsonasObject,flags=0asInteger)asString'
+    'GetInterface':
+        'prefix': 'GetInterface'
+        'body': 'GetInterface(${1:object}, "${2:ifname}")$0'
+        'description': 'Returns a value of type "Interface".'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-GetInterface(objectasObject,ifnameasString)asInterface'
+    'ListDir':
+        'prefix': 'ListDir'
+        'body': 'ListDir("${1:path}")$0'
+        'description': """
+            Returns a List object containing the contents of the directory path specified.
+            All files names are converted to all lowercase.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-ListDir(pathasString)asObject'
+    'MatchFiles':
+        'prefix': 'MatchFiles'
+        'body': 'MatchFiles("${1:path}", "${2:patternIn}")$0'
+        'description': """
+            Searches a directory for filenames that match a certain pattern. Pattern is a wildmat expression.
+            Returns a List object. This function checks all the files in the directory specified against
+            the pattern specified and places any matches in the returned roList.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-MatchFiles(pathasString,pattern_inasString)asObject'
+    'MoveFile':
+        'prefix': 'MoveFile'
+        'body': 'MoveFile("${1:sourcePath}", "${2:destinationPath}")$0'
+        'description': 'Renames a file.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-MoveFile(sourceasString,destinationasString)asBoolean'
+    'ParseJson':
+        'prefix': 'ParseJson'
+        'body': 'ParseJson("${1:jsonString}")$0'
+        'description': """
+            Parses a string formatted according to RFC4627 and return an equivalent BrightScript object.
+            If the string is not syntactically correct, Invalid will be returned.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-ParseJson(jsonStringasString)asObject'
+    'ReadAsciiFile':
+        'prefix': 'ReadAsciiFile'
+        'body': 'ReadAsciiFile("${1:filePath}")$0'
+        'description': 'Reads the specified file and returns the data as a string.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-ReadAsciiFile(filepathasString)asString'
+    'RebootSystem':
+        'prefix': 'RebootSystem'
+        'body': 'RebootSystem()$0'
+        'description': """
+            Requests the system to perform a soft reboot.
+            The Roku platform has disabled this feature.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-RebootSystem()asVoid'
+    'RunGarbageCollector':
+        'prefix': 'RunGarbageCollector'
+        'body': 'RunGarbageCollector()$0'
+        'description': """
+            Runs the garbage collector.
+            Returns and Associative Array with some statistics regarding the garbage collection.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-RunGarbageCollector()asObject'
+    'Sleep':
+        'prefix': 'Sleep'
+        'body': 'Sleep(${1:milliseconds})$0'
+        'description': 'Pauses the script for the specified time, without wasting CPU cycles.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-Sleep(millisecondsasInteger)asVoid'
+    'StrToI':
+        'prefix': 'StrToI'
+        'body': 'StrToI("${1:str}")$0'
+        'description': 'Returns the integer value of the string, or invalid if str is not a string.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-StrToI(strasString)asDynamic'
+    'Tr':
+        'prefix': 'Tr'
+        'body': 'Tr("${1:source}")$0'
+        'description': 'Translates the source string into the language of the current locale.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-Tr(sourceasString)asString'
+    'UpTime':
+        'prefix': 'UpTime'
+        'body': 'UpTime(${1:dummy})$0'
+        'description': 'Returns the uptime of the system since the last reboot in seconds.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-UpTime(dummyasInteger)asFloat'
+    'Wait':
+        'prefix': 'Wait'
+        'body': 'Wait(${1:milliseconds}, ${2:port})$0'
+        'description': """
+            Waits on objects that are "waitable" (those that have a MessagePort interface).
+            Wait() returns the event object that was posted to the message port.
+            If timeout is zero, "wait" will wait for ever.
+            Otherwise, Wait will return after timeout milliseconds if no messages are received.
+            In this case, Wait returns a type "invalid".
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-Wait(timeoutasInteger,portasObject)asObject'
+    'WriteAsciiFile':
+        'prefix': 'WriteAsciiFile'
+        'body': 'WriteAsciiFile("${1:filePath}", "${2:text}")$0'
+        'description': 'Writes the specified string data to a file at the specified location.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Utility+Functions#GlobalUtilityFunctions-WriteAsciiFile(filepathasString,textasString)asBoolean'

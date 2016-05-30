@@ -1,0 +1,99 @@
+'.source.brightscript':
+    'Asc':
+        'prefix': 'Asc'
+        'body': 'Asc("${1:letter}")$0'
+        'description': """
+            Returns the ASCII code for the first character of the specified string.
+            A null-string argument will cause an error to occur.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-Asc(letterasString)asInteger'
+    'Chr':
+        'prefix': 'Chr'
+        'body': 'Chr(${1:asciiVal})$0'
+        'description': 'Returns a one-character string whose character has the specified ASCII value.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-Chr(chasInteger)asString'
+    'Instr':
+        'prefix': 'Instr'
+        'body': 'Instr(${1:start}, "${2:text}", "${3:substring}")$0'
+        'description': """
+            Returns the position of the first instances of substring within text,
+            starting at the specified start position. Returns 0 if the substring is not found.
+            Unlike the ifString.Instr() method, the first position is 1.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-Instr(startasInteger,textasString,substringasString)asInteger'
+    'LCase':
+        'prefix': 'LCase'
+        'body': 'LCase("${1:str}")$0'
+        'description': 'Converts the string to all lower case.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-LCase(sasString)asString'
+    'Left':
+        'prefix': 'Left'
+        'body': 'Left("${1:str}", ${2:n})$0'
+        'description': 'Returns the first n characters of s.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-Left(sasString,nasInteger)asString'
+    'Len':
+        'prefix': 'Len'
+        'body': 'Len("${1:str}")$0'
+        'description': 'Returns the number of characters in the specified string.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-Len(sasString)asInteger'
+    'Mid':
+        'prefix': 'Mid'
+        'body': 'Mid("${1:str}", ${2:p}${3, ${4:n}})$0'
+        'description': """
+            Returns a substring of s with length n and starting at position p.
+            n may be omitted, in which case the string starting at p and ending
+            at the end of the string is returned.
+            Unlike the ifString.Mid() method, the first character in the string is position 1.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-Mid(sasString,pasInteger,[nasInteger])asString'
+    'Right':
+        'prefix': 'Right'
+        'body': 'Right("${1:str}", ${2:n})$0'
+        'description': 'Returns the last n characters of str.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-Right(sasString,nasInteger)asString'
+    'Str':
+        'prefix': 'Str'
+        'body': 'Str(${1:value})$0'
+        'description': 'Converts a value to a string.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-Str(valueasFloat)asString'
+    'StrI':
+        'prefix': 'StrI'
+        'body': 'StrI(${1:value}${2:, ${3:optionalRadix}})$0'
+        'description': 'Converts a value to a string. Optional radix.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-StrI(valueasInteger)asString'
+    'String':
+        'prefix': 'String'
+        'body': 'String(${1:n}, "${2:str}")$0'
+        'description': """
+            Returns a string composed of n copies of the second argument concatenated together.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-String(nasInteger,strasString)asString'
+    'StringI':
+        'prefix': 'StringI'
+        'body': 'StringI(${1:n}, ${2:asciiVal})$0'
+        'description': """
+            Returns a string composed of n copies of the character
+            whose ASCII value is the second argument.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-StringI(nasInteger,chasInteger)asString'
+    'Substitute':
+        'prefix': 'Substitute'
+        'body': 'Substitute("${1:str}", "${2:arg0}"${3:, "${4:optionalArg1}"${5:, "${6:optionalArg2}"${7:, "${8:optionalArg3}"}}})$0'
+        'description': """
+            Replaces all instances of {0} or ^0 in str with arg0.
+            Similarly, replaces all instances of {1} or ^1 with arg1,
+            {2} or ^2 with arg2, and {3} or ^3 with arg3.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-Substitute(strasString,arg0asString,arg1=""asString,arg2=""asString,arg3=""asString)asString'
+    'UCase':
+        'prefix': 'UCase'
+        'body': 'UCase("${1:str}")$0'
+        'description': 'Converts the string to all upper case.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-UCase(sasString)asString'
+    'Val':
+        'prefix': 'Val'
+        'body': 'Val("{1:str}"${2:, ${3:optionalRadix}})$0'
+        'description': """
+            Returns the number represented by the characters in a string argument. Optional radix.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+String+Functions#GlobalStringFunctions-Val(sasString)asFloat'

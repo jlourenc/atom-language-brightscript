@@ -1,0 +1,19 @@
+'.source.brightscript':
+    'Init':
+        'prefix': 'Init'
+        'body': 'function init () as Void\n\t${1:\' code here}\nend function\n$0'
+        'description': 'Allows initialization and other scripted control of a Scene Graph XML component.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/pages/viewpage.action?pageId=1608546'
+    'OnKeyEvent':
+        'prefix': 'OnKeyEvent'
+        'body': 'function onKeyEvent (key as String, press as Boolean) as Boolean\n\t${1:\' code here}\n\treturn true\nend function\n$0'
+        'description': """
+            Receives remote control key events from the firmware,
+            and allows you to write event handlers for a node or component in response to the events.
+            The function returns a message to the firmware to indicate
+            that a particular event has been handled by the node or component,
+            preventing the event from moving up the focus chain,
+            to possibly be handled by parent nodes in the Scene Graph node tree,
+            or by default firmware handlers.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/pages/viewpage.action?pageId=1608547'

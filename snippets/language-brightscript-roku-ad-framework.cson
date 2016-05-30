@@ -1,0 +1,14 @@
+'.source.brightscript':
+    'Roku_Ads':
+        'prefix': 'Roku_Ads'
+        'body': 'Roku_Ads()'
+        'description': """
+            Returns the Roku ad parser/renderer object.
+            This is the main entry point for instantiating the ad interface.
+            The object returned has global scope, since it is meant to represent
+            interaction with external resources (the ad server and any tracking services)
+            that have persistence and state independent of the ad rendering within a client application.
+            Manages ad server requests, parses ad structure, schedules and renders ads,
+            and triggers tracking beacons.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Roku+Advertising+Framework#RokuAdvertisingFramework-Roku_Ads()'

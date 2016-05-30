@@ -1,0 +1,56 @@
+'.source.brightscript':
+    'Box':
+        'prefix': 'Box'
+        'body': 'Box(${1:variable})$0'
+        'description': """
+            Returns an object version of an intrinsic type,
+            or pass through an object if given one.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Runtime+Functions#RuntimeFunctions-Box(xasDynamic)asObject'
+    'CreateObject':
+        'prefix': 'CreateObject'
+        'body': 'CreateObject(${1:roComponent}${2:, ${3:optionalParameters}})$4'
+        'description': """
+            Creates a BrightScript Component of class classname specified.
+            Returns invalid if the object creation fails.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Runtime+Functions#RuntimeFunctions-CreateObject(classnameasString,[optionalparameters])asObject'
+    'Eval':
+        'prefix': 'Eval'
+        'body': 'Eval("${1"code}")$0'
+        'description': """
+            Runs a code snippet in the context of the current function.
+            It performs a compile, and then byte code execution.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Runtime+Functions#RuntimeFunctions-Eval(codeasString)asDynamic'
+    'GetGlobalAA':
+        'prefix': 'GetGlobalAA'
+        'body': 'GetGlobalAA()$0'
+        'description': 'Fetches the script global Associative Array.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Runtime+Functions#RuntimeFunctions-GetGlobalAA()asObject'
+    'GetLastRunCompileError':
+        'prefix': 'GetLastRunCompileError'
+        'body': 'GetLastRunCompileError()$0'
+        'description': """
+            Returns an roList of compile errors, or invalid if no errors.
+            Each list entry is an roAssociativeArray with the keys: ERRNO, ERRSTR, FILESPEC, and LINENO.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Runtime+Functions#RuntimeFunctions-GetLastRunCompileError()asObject'
+    'GetLastRunRuntimeError':
+        'prefix': 'GetLastRunRuntimeError'
+        'body': 'GetLastRunRuntimeError()$0'
+        'description': 'Returns an error code result after the last script Run().'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Runtime+Functions#RuntimeFunctions-GetLastRunRuntimeError()asInteger'
+    'Run':
+        'prefix': 'Run'
+        'body': 'Run(${1:filePath}${2:, ${3:optionalParameters}})$0'
+        'description': """
+            Runs a script from a script. Args may be passed to the scripts Main() function,
+            and the called script may return arguments.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Runtime+Functions#RuntimeFunctions-Run(filenameasString[,Args…])Asdynamic'
+    'Type':
+        'prefix': 'Type'
+        'body': 'Type(${1:variable}${2:, ${3:optionalVersion}})$0'
+        'description': 'Returns the type of a variable and/or object.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Runtime+Functions#RuntimeFunctions-Type(variable,[optionalversion])asString'

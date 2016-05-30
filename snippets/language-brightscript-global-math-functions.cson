@@ -1,0 +1,88 @@
+'.source.brightscript':
+    'Abs':
+        'prefix': 'Abs'
+        'body': 'Abs(${1:x})$0'
+        'description': 'Returns the absolute value of the argument.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Abs(xasFloat)asFloat'
+    'Atn':
+        'prefix': 'Atn'
+        'body': 'Atn(${1:x})$0'
+        'description': 'Returns the arctangent (in radians) of the argument.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Atn(xasFloat)asFloat'
+    'Cdbl':
+        'prefix': 'Cdbl'
+        'body': 'Cdbl(${1:x})$0'
+        'description': 'Returns a single precision float representation of the argument.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Cdbl(xasInteger)asFloat'
+    'Cint':
+        'prefix': 'Cint'
+        'body': 'Cint(${1:x})$0'
+        'description': 'Returns an integer representation of the argument, rounding up from midpoints.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Cint(xasFloat)asInteger'
+    'Cos':
+        'prefix': 'Cos'
+        'body': 'Cos(${1:x})$0'
+        'description': 'Returns the cosine of the argument (argument must be in radians).'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Cos(xasFloat)asFloat'
+    'Csng':
+        'prefix': 'Csng'
+        'body': 'Csng(${1:x})$0'
+        'description': 'Returns a single-precision float representation of the argument.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Csng(xasInteger)asFloat'
+    'Exp':
+        'prefix': 'Exp'
+        'body': 'Exp(${1:x})$0'
+        'description': 'Returns the "natural exponential" of X, that is, ex.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Exp(xasFloat)asFloat'
+    'Fix':
+        'prefix': 'Fix'
+        'body': 'Exp(${1:x})$0'
+        'description': """
+            Returns a truncated representation of the argument.
+            All digits to the right of the decimal point are simply chopped off,
+            so the resultant value is an integer.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Fix(xasFloat)asInteger'
+    'Int':
+        'prefix': 'Int'
+        'body': 'Int(${1:x})$0'
+        'description': """
+            Returns an integer representation of the argument,
+            using the largest whole number that is not greater than the argument.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Int(xasFloat)asInteger'
+    'Log':
+        'prefix': 'Log'
+        'body': 'Log(${1:x})$0'
+        'description': 'Returns the natural logarithm of the argument, that is, loge(x) or ln(x).'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Log(xasFloat)asFloat'
+    'Rnd':
+        'prefix': 'Rnd'
+        'body': 'Rnd(${1:x})$0'
+        'description': """
+            Generates a pseudo-random number using the current pseudo-random "seed number"
+            (generated internally and not accessible to user).
+            RND may be used to produce random numbers between 0 and 1,
+            or random integers greater than 0, depending on the argument.
+        """
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Rnd(rangeasInteger)asInteger'
+    'Sgn':
+        'prefix': 'Sgn'
+        'body': 'Sgn(${1:x})$0'
+        'description': 'Returns -1 for X negative, 0 for X zero, and +1 for X positive.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Sgn(xasFloat)asInteger'
+    'Sin':
+        'prefix': 'Sin'
+        'body': 'Sin(${1:x})$0'
+        'description': 'Returns the sine of the argument (argument must be in radians).'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Sin(xasFloat)asFloat'
+    'Sqr':
+        'prefix': 'Sqr'
+        'body': 'Sqr(${1:x})$0'
+        'description': 'Returns the square root of the argument.'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Sqr(xasFloat)asFloat'
+    'Tan':
+        'prefix': 'Tan'
+        'body': 'Tan(${1:x})$0'
+        'description': 'Returns the tangent of the argument (argument must be in radians).'
+        'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/Global+Math+Functions#GlobalMathFunctions-Tan(xasFloat)asFloat'
