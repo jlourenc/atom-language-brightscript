@@ -1,4 +1,4 @@
-# BrightScript language support in Atom
+# BrightScript language support in Atom [![Build Status](https://travis-ci.org/jlourenc/atom-language-brightscript.svg?branch=master)](https://travis-ci.org/jlourenc/atom-language-brightscript)
 
 Adds syntax highlighting and snippets for BrightScript in Atom.
 
