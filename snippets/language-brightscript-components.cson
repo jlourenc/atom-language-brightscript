@@ -498,7 +498,7 @@
     'Create.TextureManager':
         'prefix': 'CreateObject("roTextureManager")'
         'body': 'CreateObject("roTextureManager")'
-        'description':  """
+        'description': """
             Provides a set of API's for managing an roBitmap cache. Implements ifTextureManager,
             ifSetMessagePort, ifGetMessagePort and ifHttpAgent interfaces.
             Supports roTextureRequestEvent events.
@@ -1202,7 +1202,7 @@
     'String.TextureManager':
         'prefix': 'roTextureManager'
         'body': '"roTextureManager"'
-        'description':  """
+        'description': """
             Provides a set of API's for managing an roBitmap cache. Implements ifTextureManager,
             ifSetMessagePort, ifGetMessagePort and ifHttpAgent interfaces.
             Supports roTextureRequestEvent events.
