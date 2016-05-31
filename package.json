@@ -1,5 +1,5 @@
 {
-    "name": "language-brightscript",
+    "name": "atom-language-brightscript",
     "version": "0.0.0",
     "engines": {
         "atom": "*",
