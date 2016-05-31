@@ -1,21 +1,21 @@
 {
-    "name": "atom-language-brightscript",
-    "version": "0.0.0",
-    "engines": {
-        "atom": "*",
-        "node": "*"
-    },
-    "description": "BrightScript language package for Atom",
-    "homepage": "https://github.com/jlourenc/atom-language-brightscript",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/jlourenc/atom-language-brightscript"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/jlourenc/atom-language-brightscript/issues"
-    },
-    "dependencies": {
-        "coffeelint": "^1.10.1"
-    }
+  "name": "atom-language-brightscript",
+  "version": "0.1.0",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "description": "BrightScript language package for Atom",
+  "homepage": "https://github.com/jlourenc/atom-language-brightscript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlourenc/atom-language-brightscript"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlourenc/atom-language-brightscript/issues"
+  },
+  "dependencies": {
+    "coffeelint": "^1.10.1"
+  }
 }
