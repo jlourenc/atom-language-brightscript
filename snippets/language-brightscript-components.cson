@@ -505,8 +505,8 @@
         """
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roTextureManager'
     'Create.TextureRequest':
-        'prefix': 'CreateObject("roTextureRequest", ${1:uri})$0'
-        'body': 'CreateObject("roTextureRequest")'
+        'prefix': 'CreateObject("roTextureRequest")'
+        'body': 'CreateObject("roTextureRequest", ${1:uri})$0'
         'description': """
             Used to make requests to the roTextureManager. Implements ifTextureRequest and ifHttpAgent interfaces.
         """

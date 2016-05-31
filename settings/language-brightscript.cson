@@ -22,6 +22,8 @@
             'dim'
             'end'
             'stop'
+            'top'
+            'global'
             'ifAppInfo'
             'ifAppManager'
             'ifArray'

@@ -26,14 +26,6 @@
         ]
     }
     {
-        'match': '\\bm\\.global\\b'
-        'name': 'variable.language.m.global.brightscript'
-    }
-    {
-        'match': '\\bm\\.top\\b'
-        'name': 'variable.language.m.top.brightscript'
-    }
-    {
         'match': '\\bm\\b'
         'name': 'variable.language.m.brightscript'
     }
