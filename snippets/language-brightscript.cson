@@ -1,25 +1,28 @@
 '.source.brightscript':
-    'forto':
-        'prefix': 'forto'
-        'body': 'for ${1:i=0} to ${2:10} step ${3:1}\n\t${4:\' code here}\nend for\n$0'
-    'foreach':
-        'prefix': 'foreach'
-        'body': 'for each ${1:item} in ${2:items}\n\t${3:\' code here}\nend for\n$0'
+    'for_to':
+        'prefix': 'for_to'
+        'body': 'for ${1:i=0} to ${2:10} step ${3:1}\n\t${4:\' code here}\nend for$0'
+    'for_each':
+        'prefix': 'for_each'
+        'body': 'for each ${1:item} in ${2:items}\n\t${3:\' code here}\nend for$0'
     'while':
         'prefix': 'while'
-        'body': 'while ${1:i=0}\n\t${2:\' code here}\nend while\n$0'
-    'ifthen':
-        'prefix': 'ifthen'
-        'body': 'if ${1:i=0} then ${2:i++}\n$0'
-    'ifthenelse':
-        'prefix': 'ifthenelse'
-        'body': 'if ${1:i=0} then ${2:i++} else ${3:i+=2}\n$0'
-    'ifelse':
-        'prefix': 'ifelse'
-        'body': 'if ${1:i=0}\n\t${2:\' code here}\nelse\n\t${3:\' code here}\nend for\n$0'
-    'ifelseif':
-        'prefix': 'ifelseif'
-        'body': 'if ${1:i=0}\n\t${2:\' code here}\nelse if ${3:i=1}\n\t${4:\' code here}\nend for\n$0'
-    'ifelseifelse':
-        'prefix': 'ifelseifelse'
-        'body': 'if ${1:i=0}\n\t${2:\' code here}\nelse if ${3:i=1}\n\t${4:\' code here}\nelse\n\t${5:\' code here}\nend for\n$0'
+        'body': 'while ${1:i=0}\n\t${2:\' code here}\nend while$0'
+    'if_then':
+        'prefix': 'if_then'
+        'body': 'if ${1:i=0} then ${2:i++}$0'
+    'if_then_else':
+        'prefix': 'if_then_else'
+        'body': 'if ${1:i=0} then ${2:i++} else ${3:i+=2}$0'
+    'if_end':
+        'prefix': 'if_end'
+        'body': 'if ${1:i=0}\n\t${2:\' code here}\nend if$0'
+    'if_else':
+        'prefix': 'if_else'
+        'body': 'if ${1:i=0}\n\t${2:\' code here}\nelse\n\t${3:\' code here}\nend if$0'
+    'if_else_if':
+        'prefix': 'if_else_if'
+        'body': 'if ${1:i=0}\n\t${2:\' code here}\nelse if ${3:i=1}\n\t${4:\' code here}\nend if$0'
+    'if_else_if_else':
+        'prefix': 'if_else_if_else'
+        'body': 'if ${1:i=0}\n\t${2:\' code here}\nelse if ${3:i=1}\n\t${4:\' code here}\nelse\n\t${5:\' code here}\nend if$0'
