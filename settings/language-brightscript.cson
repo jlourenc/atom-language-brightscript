@@ -1,6 +1,6 @@
 '.source.brightscript':
-    'commentStart': '\''
     'editor':
+        'commentStart': '\''
         'completions': [
             'if'
             'then'
