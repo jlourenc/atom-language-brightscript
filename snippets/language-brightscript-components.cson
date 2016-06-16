@@ -563,12 +563,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roXMLElement'
     'String.AppInfo':
         'prefix': 'roAppInfo'
-        'body': '"roAppInfo"'
+        'body': 'roAppInfo'
         'description': 'Returns information about the application. Implements ifAppInfo interface.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roAppInfo'
     'String.AppManager':
         'prefix': 'roAppManager'
-        'body': '"roAppManager"'
+        'body': 'roAppManager'
         'description': """
             Sets application level attributes, which mostly affect the look-and-feel of the application.
             Implements ifAppManager interface.
@@ -576,7 +576,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roAppManager'
     'String.Array':
         'prefix': 'roArray'
-        'body': '"roArray"'
+        'body': 'roArray'
         'description': """
             An array stores an indexed collection of BrightScript objects.
             Each entry of an array can be a different type, or they may all of the same type.
@@ -585,7 +585,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roArray'
     'String.AssociativeArray':
         'prefix': 'roAssociativeArray'
-        'body': '"roAssociativeArray"'
+        'body': 'roAssociativeArray'
         'description': """
             An associative array (also known as a map, dictionary or hash table) allows objects to be associated with string keys.
             Implements ifAssociativeArray and ifEnum interfaces.
@@ -593,7 +593,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roAssociativeArray'
     'String.AudioMetadata':
         'prefix': 'roAudioMetadata'
-        'body': '"roAudioMetadata"'
+        'body': 'roAudioMetadata'
         'description': """
             Provides developers access to audio file metadata included in many audio files.
             Implements ifAudioMetadata inteface.
@@ -601,7 +601,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roAudioMetadata'
     'String.AudioPlayer':
         'prefix': 'roAudioPlayer'
-        'body': '"roAudioPlayer"'
+        'body': 'roAudioPlayer'
         'description': """
             provides the ability to setup the playing of a series of audio streams.
             The object accepts an array of content meta-data objects, describing the audio and providing url's for accessing each stream.
@@ -611,12 +611,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roAudioPlayer'
     'String.AudioPlayerEvent':
         'prefix': 'roAudioPlayerEvent'
-        'body': '"roAudioPlayerEvent"'
+        'body': 'roAudioPlayerEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roAudioPlayerEvent'
     'String.AudioResource':
         'prefix': 'roAudioResource'
-        'body': '"roAudioResource"'
+        'body': 'roAudioResource'
         'description': """
             Allows .wav files to be cached to memory and quickly played at any time.
             Implements ifAudioResource interface.
@@ -624,17 +624,17 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roAudioResource'
     'String.Bitmap':
         'prefix': 'roBitmap'
-        'body': '"roBitmap"'
+        'body': 'roBitmap'
         'description': 'Contains image data and provides an interface (ifDraw2D) for drawing. Implements ifDraw2D.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roBitmap'
     'String.Boolean':
         'prefix': 'roBoolean'
-        'body': '"roBoolean"'
+        'body': 'roBoolean'
         'description': 'Object equivalent for intrinsic type Boolean. Implements ifBoolean and ifToStr interfaces.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roBoolean'
     'String.ByteArray':
         'prefix': 'roByteArray'
-        'body': '"roByteArray"'
+        'body': 'roByteArray'
         'description': """
             Used to contain and manipulate an arbitrary array of bytes.'
             Implements ifByteArray, ifArray, ifArrayGet, ifArraySet and ifEnum interfaces.
@@ -642,7 +642,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roByteArray'
     'String.CaptionRenderer':
         'prefix': 'roCaptionRenderer'
-        'body': '"roCaptionRenderer"'
+        'body': 'roCaptionRenderer'
         'description': """
             Provides a mechanism for BrightScript channels to render closed captions
             in video played back with the roVideoPlayer.
@@ -651,12 +651,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roCaptionRenderer'
     'String.CaptionRendererEvent':
         'prefix': 'roCaptionRendererEvent'
-        'body': '"roCaptionRendererEvent"'
+        'body': 'roCaptionRendererEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roCaptionRendererEvent'
     'String.ChannelStore':
         'prefix': 'roChannelStore'
-        'body': '"roChannelStore"'
+        'body': 'roChannelStore'
         'description': """
             Allows the application to perform a purchase of an In-Channel Product or upgrade a channel.
             Implements ifChannelStore, ifSourceIdentity, ifSetMessagePort and ifGetMessagePort interfaces.
@@ -665,12 +665,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roChannelStore'
     'String.ChannelStoreEvent':
         'prefix': 'roChannelStoreEvent'
-        'body': '"roChannelStoreEvent"'
+        'body': 'roChannelStoreEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roChannelStoreEvent'
     'String.CodeRegistrationScreen':
         'prefix': 'roCodeRegistrationScreen'
-        'body': '"roCodeRegistrationScreen"'
+        'body': 'roCodeRegistrationScreen'
         'description': """
             This screen is designed to present the user a registration code,
             and the information required to instruct the user on how to register with a service provider.
@@ -680,12 +680,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roCodeRegistrationScreen'
     'String.CodeRegistrationScreenEvent':
         'prefix': 'roCodeRegistrationScreenEvent'
-        'body': '"roCodeRegistrationScreenEvent"'
+        'body': 'roCodeRegistrationScreenEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roCodeRegistrationScreenEvent'
     'String.Compositor':
         'prefix': 'roCompositor'
-        'body': '"roCompositor"'
+        'body': 'roCompositor'
         'description': """
             Allows the composition and animation of multiple roBitmaps and roRegions.
             Implements ifCompositor interface.
@@ -693,7 +693,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roCompositor'
     'String.DataGramSocket':
         'prefix': 'roDataGramSocket'
-        'body': '"roDataGramSocket"'
+        'body': 'roDataGramSocket'
         'description': """
             enables Brightscript apps to send and receive UDP packets.
             The interface is modeled on and works much like standard Berkeley sockets.
@@ -703,7 +703,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roDataGramSocket'
     'String.DateTime':
         'prefix': 'roDateTime'
-        'body': '"roDateTime"'
+        'body': 'roDateTime'
         'description': """
             Provides an interface to obtain the current date/time for the player and manipulate date/times.
             Implements ifDateTime interface.
@@ -711,7 +711,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roDateTime'
     'String.DeviceInfo':
         'prefix': 'roDeviceInfo'
-        'body': '"roDeviceInfo"'
+        'body': 'roDeviceInfo'
         'description': """
             Provides an interface to obtain attributes about the device.
             Implements ifDeviceInfo, ifSetMessagePort and ifGetMessagePort interfaces.
@@ -720,17 +720,17 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roDeviceInfo'
     'String.DeviceInfoEvent':
         'prefix': 'roDeviceInfoEvent'
-        'body': '"roDeviceInfoEvent"'
+        'body': 'roDeviceInfoEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roDeviceInfoEvent'
     'String.Double':
         'prefix': 'roDouble'
-        'body': '"roDouble"'
+        'body': 'roDouble'
         'description': 'Object equivalent for intrinsic type Double. Implements ifDouble and ifToStr interfaces.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roDouble'
     'String.EVPCipher':
         'prefix': 'roEVPCipher'
-        'body': '"roEVPCipher"'
+        'body': 'roEVPCipher'
         'description': """
             provides an interface to the OpenSSL EVP library of symmetric cipher commands.
             The EVP library provides a high-level interface to cryptographic functions to implement digital envelopes.
@@ -739,7 +739,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roEVPCipher'
     'String.EVPDigest':
         'prefix': 'roEVPDigest'
-        'body': '"roEVPDigest"'
+        'body': 'roEVPDigest'
         'description': """
             Provides an interface to the OpenSSL EVP library of message digest algorithms.
             The EVP library provides a high-level interface to cryptographic hash functions.
@@ -747,7 +747,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roEVPDigest'
     'String.FileSystem':
         'prefix': 'roFileSystem'
-        'body': '"roFileSystem"'
+        'body': 'roFileSystem'
         'description': """
             Provides common filesystem inspection and modification routines.
             Implements ifFileSystem, ifSetMessagePort and ifGetMessagePort interfaces.
@@ -756,17 +756,17 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roFileSystem'
     'String.FileSystemEvent':
         'prefix': 'roFileSystemEvent'
-        'body': '"roFileSystemEvent"'
+        'body': 'roFileSystemEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roFileSystemEvent'
     'String.Float':
         'prefix': 'roFloat'
-        'body': '"roFloat"'
+        'body': 'roFloat'
         'description': 'Object equivalent for intrinsic type Float. Implements ifFloat and ifToStr interfaces.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roFloat'
     'String.Font':
         'prefix': 'roFont'
-        'body': '"roFont"'
+        'body': 'roFont'
         'description': """
             Represents a particular font, from a font-family with a particular pixel size
             and a particular boldness or italicness. Implements ifFont interface.
@@ -774,7 +774,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roFont'
     'String.FontMetrics':
         'prefix': 'roFontMetrics'
-        'body': '"roFontMetrics"'
+        'body': 'roFontMetrics'
         'description': """
             Deprecated. Allows you to get display size information for a specific font
             returned by the roFontRegistry.Get() method. Implements ifFontMetrics interface.
@@ -782,7 +782,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roFontMetrics'
     'String.FontRegistry':
         'prefix': 'roFontRegistry'
-        'body': '"roFontRegistry"'
+        'body': 'roFontRegistry'
         'description': """
             Allows you to create roFont objects, either using the default font or
             using fonts in TrueType or OpenType files packaged with your application.
@@ -791,12 +791,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roFontRegistry'
     'String.Function':
         'prefix': 'roFunction'
-        'body': '"roFunction"'
+        'body': 'roFunction'
         'description': 'Object equivalent for intrinsic type Function. Implements ifFunction and ifToStr interfaces.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roFunction'
     'String.GridScreen':
         'prefix': 'roGridScreen'
-        'body': '"roGridScreen"'
+        'body': 'roGridScreen'
         'description': """
             Provides a graphical display of poster art from multiple content categories
             from within a single screen. Implements ifGridScreen, ifHttpAgent, ifSetMessagePort
@@ -805,17 +805,17 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roGridScreen'
     'String.GridScreenEvent':
         'prefix': 'roGridScreenEvent'
-        'body': '"roGridScreenEvent"'
+        'body': 'roGridScreenEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roGridScreenEvent'
     'String.HdmiHotPlugEvent':
         'prefix': 'roHdmiHotPlugEvent'
-        'body': '"roHdmiHotPlugEvent"'
+        'body': 'roHdmiHotPlugEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roHdmiHotPlugEvent'
     'String.HdmiStatus':
         'prefix': 'roHdmiStatus'
-        'body': '"roHdmiStatus"'
+        'body': 'roHdmiStatus'
         'description': """
             Provides an interface to the current HDMI operational status.
             Implements ifHdmiStatus and ifSetMessagePort interfaces.
@@ -823,12 +823,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roHdmiStatus'
     'String.HdmiStatusEvent':
         'prefix': 'roHdmiStatusEvent'
-        'body': '"roHdmiStatusEvent"'
+        'body': 'roHdmiStatusEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roHdmiStatusEvent'
     'String.HMAC':
         'prefix': 'roHMAC'
-        'body': '"roHMAC"'
+        'body': 'roHMAC'
         'description': """
             Provides an interface to the OpenSSL HMAC functions.
             These functions generate a Message Authentication Code (MAC) based on a key,
@@ -839,7 +839,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roHMAC'
     'String.ImageCanvas':
         'prefix': 'roImageCanvas'
-        'body': '"roImageCanvas"'
+        'body': 'roImageCanvas'
         'description': """
             Provides an interface to render graphic elements at specific spots on the screen.
             Implements ifImageCanvas and ifHttpAgent interfaces. Supports roImageCanvasEvent events.
@@ -847,12 +847,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roImageCanvas'
     'String.ImageCanvasEvent':
         'prefix': 'roImageCanvasEvent'
-        'body': '"roImageCanvasEvent"'
+        'body': 'roImageCanvasEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roImageCanvasEvent'
     'String.ImageMetadata':
         'prefix': 'roImageMetadata'
-        'body': '"roImageMetadata"'
+        'body': 'roImageMetadata'
         'description': """
             Provides developers access to image file metadata included in many .jpg EXIF headers.
             Implements ifImageMetadata interface.
@@ -860,7 +860,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roImageMetadata'
     'String.Int':
         'prefix': 'roInt'
-        'body': '"roInt"'
+        'body': 'roInt'
         'description': """
             Object equivalent for intrinsic type Integer.
             Implements ifInt, ifIntOps and ifToStr interfaces.
@@ -868,12 +868,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roInt'
     'String.Invalid':
         'prefix': 'roInvalid'
-        'body': '"roInvalid"'
+        'body': 'roInvalid'
         'description': 'Object equivalent for intrinsic type Invalid. Implements ifToStr interface.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roInvalid'
     'String.KeyboardScreen':
         'prefix': 'roKeyboardScreen'
-        'body': '"roKeyboardScreen"'
+        'body': 'roKeyboardScreen'
         'description': """
             Designed to allow the user to enter an alpha-numeric String for searching,
             username/password registration or other purposes. Implements ifKeyboardScreen,
@@ -882,12 +882,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roKeyboardScreen'
     'String.KeyboardScreenEvent':
         'prefix': 'roKeyboardScreenEvent'
-        'body': '"roKeyboardScreenEvent"'
+        'body': 'roKeyboardScreenEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roKeyboardScreenEvent'
     'String.List':
         'prefix': 'roList'
-        'body': '"roList"'
+        'body': 'roList'
         'description': """
             Array that can dynamically add members. Implements ifList, ifArray, ifArrayGet,
             ifArraySet and ifEnum interfaces.
@@ -895,7 +895,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roList'
     'String.ListScreen':
         'prefix': 'roListScreen'
-        'body': '"roListScreen"'
+        'body': 'roListScreen'
         'description': """
             Provides a graphical display of content in a vertical list within a single screen.
             Implements ifListScreen, ifHttpAgent, ifSetMessagePort and ifGetMessagePort interfaces.
@@ -904,22 +904,22 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roListScreen'
     'String.ListScreenEvent':
         'prefix': 'roListScreenEvent'
-        'body': '"roListScreenEvent"'
+        'body': 'roListScreenEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roListScreenEvent'
     'String.Localization':
         'prefix': 'roLocalization'
-        'body': '"roLocalization"'
+        'body': 'roLocalization'
         'description': 'Provides functions to assist in localization. Implements ifLocalization interface.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roLocalization'
     'String.LongInteger':
         'prefix': 'roLongInteger'
-        'body': '"roLongInteger"'
+        'body': 'roLongInteger'
         'description': 'Object equivalent for intrinsic type LongInteger. Implements ifLongInt and ifToStr interfaces.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roLongInteger'
     'String.MessageDialog':
         'prefix': 'roMessageDialog'
-        'body': '"roMessageDialog"'
+        'body': 'roMessageDialog'
         'description': """
             Displays a formatted, multi-line text message to the user. The dialog may optionally be
             displayed with a busy animation to indicate progress on a long running operation.
@@ -929,17 +929,17 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roMessageDialog'
     'String.MessageDialogEvent':
         'prefix': 'roMessageDialogEvent'
-        'body': '"roMessageDialogEvent"'
+        'body': 'roMessageDialogEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roMessageDialogEvent'
     'String.MessagePort':
         'prefix': 'roMessagePort'
-        'body': '"roMessagePort"'
+        'body': 'roMessagePort'
         'description': 'A Message Port is the place messages (events) are sent. Implements ifMessagePort interface.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roMessagePort'
     'String.OneLineDialog':
         'prefix': 'roOneLineDialog'
-        'body': '"roOneLineDialog"'
+        'body': 'roOneLineDialog'
         'description': """
             Special type of dialog optimized for single line text. Implements ifOneLineDialog,
             ifSetMessagePort and ifGetMessagePort interfaces. Supports roOneLineDialogEvent events.
@@ -947,12 +947,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roOneLineDialog'
     'String.OneLineDialogEvent':
         'prefix': 'roOneLineDialogEvent'
-        'body': '"roOneLineDialogEvent"'
+        'body': 'roOneLineDialogEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roOneLineDialogEvent'
     'String.ParagraphScreen':
         'prefix': 'roParagraphScreen'
-        'body': '"roParagraphScreen"'
+        'body': 'roParagraphScreen'
         'description': """
             Provides a way to display text and selection choices to the user.
             Implements ifParagraphScreen, ifSetMessagePort and ifGetMessagePort interfaces.
@@ -961,12 +961,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roParagraphScreen'
     'String.ParagraphScreenEvent':
         'prefix': 'roParagraphScreenEvent'
-        'body': '"roParagraphScreenEvent"'
+        'body': 'roParagraphScreenEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roParagraphScreenEvent'
     'String.Path':
         'prefix': 'roPath'
-        'body': '"roPath"'
+        'body': 'roPath'
         'description': """
             Provides developers an easy way to create valid file system paths.
             Implements ifPath and ifString interfaces.
@@ -974,7 +974,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roPath'
     'String.PinEntryDialog':
         'prefix': 'roPinEntryDialog'
-        'body': '"roPinEntryDialog"'
+        'body': 'roPinEntryDialog'
         'description': """
             Designed to allow the user to enter a numeric PIN for purchasing content.
             Implements ifPinEntryDialog, ifSetMessagePort and ifGetMessagePort interfaces.
@@ -982,12 +982,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roPinEntryDialog'
     'String.PinEntryDialogEvent':
         'prefix': 'roPinEntryDialogEvent'
-        'body': '"roPinEntryDialogEvent"'
+        'body': 'roPinEntryDialogEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roPinEntryDialogEvent'
     'String.PosterScreen':
         'prefix': 'roPosterScreen'
-        'body': '"roPosterScreen"'
+        'body': 'roPosterScreen'
         'description': """
             Provides a graphical display of poster art for content selection or can be used
             as a submenu to provide hierarchical structure to the application.
@@ -997,12 +997,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roPosterScreen'
     'String.PosterScreenEvent':
         'prefix': 'roPosterScreenEvent'
-        'body': '"roPosterScreenEvent"'
+        'body': 'roPosterScreenEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roPosterScreenEvent'
     'String.ProgramGuide':
         'prefix': 'roProgramGuide'
-        'body': '"roProgramGuide"'
+        'body': 'roProgramGuide'
         'description': """
             Represents Electronic Program Guide (EPG) information from the Roku TV tuner.
             Implements ifProgramGuide interface.
@@ -1010,7 +1010,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roProgramGuide'
     'String.Regex':
         'prefix': 'roRegex'
-        'body': '"roRegex"'
+        'body': 'roRegex'
         'description': """
             Provides the powerful regular expression processing of the PCRE library to Brightscript Strings.
             Implements ifRegex interface.
@@ -1018,12 +1018,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roRegex'
     'String.Region':
         'prefix': 'roRegion'
-        'body': '"roRegion"'
+        'body': 'roRegion'
         'description': 'Used to represent a subsection of a bitmap. Implements ifRegion interface.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roRegion'
     'String.Registry':
         'prefix': 'roRegistry'
-        'body': '"roRegistry"'
+        'body': 'roRegistry'
         'description': """
             Area of non-volatile storage where a small number of persistent settings can be stored.
             Implements ifRegistry interface.
@@ -1031,7 +1031,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roRegistry'
     'String.RegistrySection':
         'prefix': 'roRegistrySection'
-        'body': '"roRegistrySection"'
+        'body': 'roRegistrySection'
         'description': """
             Organization of settings within the registry. Different registry sections may have
             their own keys with the same name. Implements ifRegistrySection interface.
@@ -1039,7 +1039,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roRegistrySection'
     'String.RSA':
         'prefix': 'roRSA'
-        'body': '"roRSA"'
+        'body': 'roRSA'
         'description': """
             Provides an interface to the OpenSSL RSA library of signing algorithms.
             Implements ifRSA interface.
@@ -1047,7 +1047,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roRSA'
     'String.Screen':
         'prefix': 'roScreen'
-        'body': '"roScreen"'
+        'body': 'roScreen'
         'description': """
             Provides a full screen drawing surface that can be stacked and
             that you can receive input events from. Implements ifScreen, ifDraw2D,
@@ -1057,7 +1057,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roScreen'
     'String.SearchHistory':
         'prefix': 'roSearchHistory'
-        'body': '"roSearchHistory"'
+        'body': 'roSearchHistory'
         'description': """
             Implements the system wide storage of search terms for use in implementing the roSearchScreen.
             Implements ifSearchHistory interface.
@@ -1065,7 +1065,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSearchHistory'
     'String.SearchScreen':
         'prefix': 'roSearchScreen'
-        'body': '"roSearchScreen"'
+        'body': 'roSearchScreen'
         'description': """
             Provides a standard way to allow users to enter text for searching.
             Implements ifSearchScreen, ifSetMessagePort and ifGetMessagePort interfaces.
@@ -1074,12 +1074,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSearchScreen'
     'String.SearchScreenEvent':
         'prefix': 'roSearchScreenEvent'
-        'body': '"roSearchScreenEvent"'
+        'body': 'roSearchScreenEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSearchScreenEvent'
     'String.SGNode':
         'prefix': 'roSGNode'
-        'body': '"roSGNode"'
+        'body': 'roSGNode'
         'description': """
             BrightScript equivalent of Scene Graph XML file node creation. Implements ifSGNodeChildren,
             ifSGNodeField, ifSGNodeDict, ifSGNodeFocus and ifSGNodeBoundingRect interfaces.
@@ -1087,12 +1087,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSGNode'
     'String.SGNodeEvent':
         'prefix': 'roSGNodeEvent'
-        'body': '"roSGNodeEvent"'
+        'body': 'roSGNodeEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSGNodeEvent'
     'String.SGScreen':
         'prefix': 'roSGScreen'
-        'body': '"roSGScreen"'
+        'body': 'roSGScreen'
         'description': """
             Scene Graph canvas that displays the contents of a Scene Graph Scene node tree.
             Implements ifRoSGScreen interface.
@@ -1100,12 +1100,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSGScreen'
     'String.SGScreenEvent':
         'prefix': 'roSGScreenEvent'
-        'body': '"roSGScreenEvent"'
+        'body': 'roSGScreenEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSGScreenEvent'
     'String.SlideShow':
         'prefix': 'roSlideShow'
-        'body': '"roSlideShow"'
+        'body': 'roSlideShow'
         'description': """
             Provides the ability to setup a photo slide show to playback a series of images.
             Implements ifSlideShow and ifHttpAgent interfaces. Supports roSlideShowEvent events.
@@ -1113,12 +1113,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSlideShow'
     'String.SlideShowEvent':
         'prefix': 'roSlideShowEvent'
-        'body': '"roSlideShowEvent"'
+        'body': 'roSlideShowEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSlideShowEvent'
     'String.SocketAddress':
         'prefix': 'roSocketAddress'
-        'body': '"roSocketAddress"'
+        'body': 'roSocketAddress'
         'description': """
             Used by the roStreamSocket and roDataGramSocket components for TCP and UDP traffic respectively.
             Implements ifSocketAddress interface.
@@ -1126,12 +1126,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSocketAddress'
     'String.SocketEvent':
         'prefix': 'roSocketEvent'
-        'body': '"roSocketEvent"'
+        'body': 'roSocketEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSocketEvent'
     'String.SpringboardScreen':
         'prefix': 'roSpringboardScreen'
-        'body': '"roSpringboardScreen"'
+        'body': 'roSpringboardScreen'
         'description': """
             Shows detailed information about an individual piece of content and
             provides options for actions that may be taken on that content.
@@ -1141,12 +1141,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSpringboardScreen'
     'String.SpringboardScreenEvent':
         'prefix': 'roSpringboardScreenEvent'
-        'body': '"roSpringboardScreenEvent"'
+        'body': 'roSpringboardScreenEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSpringboardScreenEvent'
     'String.Sprite':
         'prefix': 'roSprite'
-        'body': '"roSprite"'
+        'body': 'roSprite'
         'description': """
             Cannot be created directly with a CreateObject() call. It must be associated with
             a managing roCompositor object. This association is implicitly created by
@@ -1156,7 +1156,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSprite'
     'String.StreamSocket':
         'prefix': 'roStreamSocket'
-        'body': '"roStreamSocket"'
+        'body': 'roStreamSocket'
         'description': """
             Enables Brightscript apps to accept and connect to TCP streams as well as send and receive data with them.
             Implements ifSocketConnection, ifSocket, ifSocketAsync, ifSocketStatus, ifSocketConnectionStatus
@@ -1165,7 +1165,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roStreamSocket'
     'String.String':
         'prefix': 'roString'
-        'body': '"roString"'
+        'body': 'roString'
         'description': """
             Object equivalent for intrinsic type String. Implements ifString, ifStringOps and
             ifToStr interfaces.
@@ -1173,7 +1173,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roString'
     'String.SystemLog':
         'prefix': 'roSystemLog'
-        'body': '"roSystemLog"'
+        'body': 'roSystemLog'
         'description': """
             enables the application to receive events from the Roku Streaming Player that are intended for
             reporting errors and trends, rather than trigger a response to a user action.
@@ -1182,12 +1182,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSystemLog'
     'String.SystemLogEvent':
         'prefix': 'roSystemLogEvent'
-        'body': '"roSystemLogEvent"'
+        'body': 'roSystemLogEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roSystemLogEvent'
     'String.TextScreen':
         'prefix': 'roTextScreen'
-        'body': '"roTextScreen"'
+        'body': 'roTextScreen'
         'description': """
             Provides a way of displaying large amounts of scrollable text.
             Implements ifTextScreen, ifSetMessagePort, ifGetMessagePort interfaces.
@@ -1196,12 +1196,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roTextScreen'
     'String.TextScreenEvent':
         'prefix': 'roTextScreenEvent'
-        'body': '"roTextScreenEvent"'
+        'body': 'roTextScreenEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roTextScreenEvent'
     'String.TextureManager':
         'prefix': 'roTextureManager'
-        'body': '"roTextureManager"'
+        'body': 'roTextureManager'
         'description': """
             Provides a set of API's for managing an roBitmap cache. Implements ifTextureManager,
             ifSetMessagePort, ifGetMessagePort and ifHttpAgent interfaces.
@@ -1210,19 +1210,19 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roTextureManager'
     'String.TextureRequest':
         'prefix': 'roTextureRequest'
-        'body': '"roTextureRequest"'
+        'body': 'roTextureRequest'
         'description': """
             Used to make requests to the roTextureManager. Implements ifTextureRequest and ifHttpAgent interfaces.
         """
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roTextureRequest'
     'String.TextureRequestEvent':
         'prefix': 'roTextureRequestEvent'
-        'body': '"roTextureRequestEvent"'
+        'body': 'roTextureRequestEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roTextureRequestEvent'
     'String.Timespan':
         'prefix': 'roTimespan'
-        'body': '"roTimespan"'
+        'body': 'roTimespan'
         'description': """
             Provides an interface to a simple timer for tracking the duration of activities.
             Implements ifTimespan interface.
@@ -1230,7 +1230,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roTimespan'
     'String.Tuner':
         'prefix': 'roTuner'
-        'body': '"roTuner"'
+        'body': 'roTuner'
         'description': """
             Provides an interface with the broadcast/cable tuner in a Roku TV.
             Implements ifTuner interface. Supports roTunerEvent events.
@@ -1238,22 +1238,22 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roTuner'
     'String.TunerEvent':
         'prefix': 'roTunerEvent'
-        'body': '"roTunerEvent"'
+        'body': 'roTunerEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roTunerEvent'
     'String.UniversalControlEvent':
         'prefix': 'roUniversalControlEvent'
-        'body': '"roUniversalControlEvent"'
+        'body': 'roUniversalControlEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roUniversalControlEvent'
     'String.UrlEvent':
         'prefix': 'roUrlEvent'
-        'body': '"roUrlEvent"'
+        'body': 'roUrlEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roUrlEvent'
     'String.UrlTransfer':
         'prefix': 'roUrlTransfer'
-        'body': '"roUrlTransfer"'
+        'body': 'roUrlTransfer'
         'description': """
             Transfers data to or from remote servers specified by URLs.
             It can perform mutual authentication with a web server.
@@ -1263,7 +1263,7 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roUrlTransfer'
     'String.VideoPlayer':
         'prefix': 'roVideoPlayer'
-        'body': '"roVideoPlayer"'
+        'body': 'roVideoPlayer'
         'description': """
             Implements a video player with more programmatic control,
             but less user control than the roVideoScreen component.
@@ -1273,12 +1273,12 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roVideoPlayer'
     'String.VideoPlayerEvent':
         'prefix': 'roVideoPlayerEvent'
-        'body': '"roVideoPlayerEvent"'
+        'body': 'roVideoPlayerEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roVideoPlayerEvent'
     'String.VideoScreen':
         'prefix': 'roVideoScreen'
-        'body': '"roVideoScreen"'
+        'body': 'roVideoScreen'
         'description': """
             Implements the video playback portion of the user interface. Implements ifSetMessagePort,
             ifGetMessagePort, ifVideoScreen and ifHttpAgent interfaces.
@@ -1287,16 +1287,16 @@
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roVideoScreen'
     'String.VideoScreenEvent':
         'prefix': 'roVideoScreenEvent'
-        'body': '"roVideoScreenEvent"'
+        'body': 'roVideoScreenEvent'
         'description': 'Click the link to get details.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roVideoScreenEvent'
     'String.XMLElement':
         'prefix': 'roXMLElement'
-        'body': '"roXMLElement"'
+        'body': 'roXMLElement'
         'description': 'Used to contain an XML tree. Implements ifXMLElement.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roXMLElement'
     'String.XMLList':
         'prefix': 'roXMLList'
-        'body': '"roXMLList"'
+        'body': 'roXMLList'
         'description': 'Contains a list of roXML objects. Implements ifList and ifXMLList.'
         'descriptionMoreURL': 'https://sdkdocs.roku.com/display/sdkdoc/roXMLList'
